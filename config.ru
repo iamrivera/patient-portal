@@ -5,5 +5,5 @@ if ActiveRecord::Migrator.needs_migration?
 end
 
 run ApplicationController
-use PatienTsController
-use DoctoRsController
+use PatientsController
+use DoctorsController
