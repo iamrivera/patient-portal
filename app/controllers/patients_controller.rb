@@ -1,37 +1,37 @@
-class PatienTsController < ApplicationController
+class PatientsController < ApplicationController
 
-  # GET: /patien_ts
-  get "/patien_ts" do
-    erb :"/patien_ts/index.html"
+  # GET: /patients
+  get "/patients" do
+    erb :"/patients/index.html"
   end
 
-  # GET: /patien_ts/new
-  get "/patien_ts/new" do
-    erb :"/patien_ts/new.html"
+  # GET: /patients/new
+  get "/patients/new" do
+    erb :"/patients/new.html"
   end
 
-  # POST: /patien_ts
-  post "/patien_ts" do
-    redirect "/patien_ts"
+  # POST: /patients
+  post "/patients" do
+    redirect "/patients"
   end
 
-  # GET: /patien_ts/5
-  get "/patien_ts/:id" do
-    erb :"/patien_ts/show.html"
+  # GET: /patients/5
+  get "/patients/:id" do
+    erb :"/patients/show.html"
   end
 
-  # GET: /patien_ts/5/edit
-  get "/patien_ts/:id/edit" do
-    erb :"/patien_ts/edit.html"
+  # GET: /patients/5/edit
+  get "/patients/:id/edit" do
+    erb :"/patients/edit.html"
   end
 
-  # PATCH: /patien_ts/5
-  patch "/patien_ts/:id" do
-    redirect "/patien_ts/:id"
+  # PATCH: /patients/5
+  patch "/patients/:id" do
+    redirect "/patients/:id"
   end
 
-  # DELETE: /patien_ts/5/delete
-  delete "/patien_ts/:id/delete" do
-    redirect "/patien_ts"
+  # DELETE: /patients/5/delete
+  delete "/patients/:id/delete" do
+    redirect "/patients"
   end
 end

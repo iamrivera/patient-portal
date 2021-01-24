@@ -1,37 +1,37 @@
-class DoctoRsController < ApplicationController
+class DoctorsController < ApplicationController
 
-  # GET: /docto_rs
-  get "/docto_rs" do
-    erb :"/docto_rs/index.html"
+  # GET: /doctors
+  get "/doctors" do
+    erb :"/doctors/index.html"
   end
 
-  # GET: /docto_rs/new
-  get "/docto_rs/new" do
-    erb :"/docto_rs/new.html"
+  # GET: /doctors/new
+  get "/doctors/new" do
+    erb :"/doctors/new.html"
   end
 
-  # POST: /docto_rs
-  post "/docto_rs" do
-    redirect "/docto_rs"
+  # POST: /doctors
+  post "/doctors" do
+    redirect "/doctors"
   end
 
-  # GET: /docto_rs/5
-  get "/docto_rs/:id" do
-    erb :"/docto_rs/show.html"
+  # GET: /doctors/5
+  get "/doctors/:id" do
+    erb :"/doctors/show.html"
   end
 
-  # GET: /docto_rs/5/edit
-  get "/docto_rs/:id/edit" do
-    erb :"/docto_rs/edit.html"
+  # GET: /doctors/5/edit
+  get "/doctors/:id/edit" do
+    erb :"/doctors/edit.html"
   end
 
-  # PATCH: /docto_rs/5
-  patch "/docto_rs/:id" do
-    redirect "/docto_rs/:id"
+  # PATCH: /doctors/5
+  patch "/doctors/:id" do
+    redirect "/doctors/:id"
   end
 
-  # DELETE: /docto_rs/5/delete
-  delete "/docto_rs/:id/delete" do
-    redirect "/docto_rs"
+  # DELETE: /doctors/5/delete
+  delete "/doctors/:id/delete" do
+    redirect "/doctors"
   end
 end
