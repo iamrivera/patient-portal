@@ -1,7 +1,7 @@
 class DoctorsController < ApplicationController
 
   # GET: /doctors
-  get "/doctors" do
+  get "/docto_rs" do
     erb :"/doctors/index.html"
   end
 
@@ -11,8 +11,8 @@ class DoctorsController < ApplicationController
   end
 
   # POST: /doctors
-  post "/doctors" do
-    redirect "/doctors"
+  post "/docto_rs" do
+    redirect "/docto_rs/${doctor.id}"
   end
 
   # GET: /doctors/5
