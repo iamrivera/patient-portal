@@ -1,4 +1,5 @@
 require './config/environment'
+require 'pry'
 
 class ApplicationController < Sinatra::Base
 
@@ -11,4 +12,7 @@ class ApplicationController < Sinatra::Base
     erb :welcome
   end
 
+  get "/docto_rs/new" do
+    erb :layout
+  end
 end
